@@ -1,0 +1,23 @@
+{
+  "name": "personal-web-garden2",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/preact": "^3.5.0",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@unocss/astro": "^0.61.2",
+    "astro": "^4.11.5",
+    "preact": "^10.22.1",
+    "typescript": "^5.5.3"
+  }
+}
