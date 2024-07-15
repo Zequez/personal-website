@@ -1,0 +1,41 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import homeNav from "../content/homeNav.yml";
+
+const { title, description, nav, markdown } = Astro.props;
+
+const navItem = homeNav[nav];
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+
+    <style
+      is:global
+      define:vars={{ "main-hue": navItem?.hue || 55, "main-saturation": "50%" }}
+    ></style>
+  </head>
+
+  <body
+    class:list={["bg-main-800 flex flex-col min-h-screen font-[Quicksand]"]}
+  >
+    <Header />
+    <h2 class="relative z-30
+      flexcc
+      h20 -mt11 -mb11">
+      <div class="relative w-30 h-30">
+        <img
+          src="/me.jpg"
+          class="relative z-20 w-full h-full rounded-full shadow-sm b-4 b-main-700 shadow-md"
+        />
+      </div>
+    </h2>
+    <main class:list={["flex-grow relative pt10", { markdown: markdown }]}>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

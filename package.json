@@ -15,9 +15,15 @@
     "@astrojs/preact": "^3.5.0",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
+    "@iconify-json/fa": "^1.1.8",
+    "@iconify-json/fa-brands": "^1.1.8",
+    "@rollup/plugin-yaml": "^4.1.2",
     "@unocss/astro": "^0.61.2",
+    "@unocss/reset": "^0.61.3",
     "astro": "^4.11.5",
+    "astro-icon": "^1.1.0",
     "preact": "^10.22.1",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "unocss": "^0.61.3"
   }
 }

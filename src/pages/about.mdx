@@ -1,0 +1,103 @@
+
+import { Picture } from "astro:assets";
+import Layout from "../layouts/Base.astro";
+import PicsSpaceWithChildren from '../components/PicsSpaceWithChildren.astro';
+
+
+<Layout markdown={true} title="About Me" description="Lorem ipsum dolor sit amet" nav="about">
+  <div class="mt8 text-center text-2xl font-bold">Born 14 December 1992 at 11:40</div>
+  <div class="opacity-50 text-center mb12">Mar del Plata, Argentina</div>
+  <PicsSpaceWithChildren />
+  <div class="flex flex-col md:flex-row">
+    <div class="md:w-1/2" style="mix-blend-mode: multiply">
+      <Picture
+        src={import("/src/assets/astro-chart.png")}
+        alt="Astrological chart"
+      />
+    </div>
+    <div class="md:w-1/2">
+      <Picture
+        src={import("/src/assets/human-design-chart.webp")}
+        alt="Human design chart"
+      />
+    </div>
+  </div>
+  <div class="max-w-screen-md mx-auto px4">
+    ## Personal values
+
+    I've only recently started to inquire myself about my values. So far the following is what I most resonate with:
+
+    - Forgiveness
+    - Honesty
+    - Curiosity
+    - Peace
+    - Collaboration
+
+    I won't elaborate further for now.
+
+    ## Beliefs
+
+    I exist; I'm alive. That's as far as my certainty goes from personal experience.
+
+    Beyond personal experience I've adopted beliefs from knowledge I read that
+    somehow makes sense, resonates with me or proves to be useful.
+
+    - I'm having a temporary human experience on planet Earth through time
+    - I agreed to voluntary amnesia
+    - There is reason for this journey; likely to learn something from an experience
+    - I cannot know who I am with my mind; and cannot conceive or transmit my beingness aside from the experience of being present
+    - I'm an individual being different from God but als part of God.
+    - God is a different person than me and I can relate to God in an intimate way as I relate to other human beings.
+    - God is benevolant, gives me what I ask for, and wants me to be happy.
+    - There are beings on subtler dimensions that are constantly looking after us beyond our conscious awareness.
+    - Service to God is my constitutional position, as a hand is to serve the whole body.
+    - All belief is a mental concept that covers up an ineffable part of an unknown truth that produces fear to look at.
+    - In this human experience I have a box, an ego, a personality, that I use to interact with the world. It's like a spaceship perfectly equipped to my mission on this run.
+    - I have 5 bodies: Intellectual, Physical, Emotional, Energetic, Archetypal
+    - I have multiple ego states one which is adult, and others made up of survival strategies
+    - Through certain processes can glimpse into a dimension of stillness and spaciousness; that's always available to me and I can practice accessing and staying there.
+    - The mind is a complex programmable tool with the purpose of serving me
+    - Transformation happens through experience on my bodies, not only with intellectual understanding
+    - I'm radically responsible for everything in my life; irresponsibility is an illusion, a survival strategy of the ego to play victim.
+
+    ## Movements I resonate with
+
+    - Cooperativism
+    - Veganism / Ahimsa
+    - Open Source / Copyleft
+
+    ## Current role model for a highly functional adult
+
+    [Clinton Callahan](https://www.clintoncallahan.org/)
+
+    If there was a ranking list of incredibleness for every person on the planet that I know,
+    Clinton Callahan would be at the top. My box maintains the list and puts him on a pedestal.
+
+    Whatever I hear from him or watch him do, has a profound effect on my belief system.
+
+    It is at it is; I don't know why. I don't consider this to be good or bad; it's just something
+    I notice about the way I see Clinton Callahan.
+
+    ## Life situation
+
+    - I'm currently coming to terms with the need to survive and gather money
+    on modern culture in planet Earth.
+    - I have a son, Coral, almost 3.
+    - I'm wrestling with problematic use of Internet, streaming and videogames
+    - I'm living separate from the mother of my son; my son stays with me half the week.
+    - The way I'm living, I consider that I need about $500 per month to satisfy the basic survival needs of the body
+    - I have about $3500 in debt that I want to pay back
+
+    ## Personality Traits
+
+    - I have tons of ideas all the time; I seldom put them in practice
+    - I often make promises I don't fulfill trying to prove myself
+    - I have pride and insecurities that make it hard for myself to find work I'm willing to do
+    - I like dancing, making music and singing; I'm afraid to do it in public
+    - I crave working and being part of a team; I'm afraid of connection and being rejected
+    - Was vegan for 4 years and now I'm a more flexible vegetarian; still vegan at home but not dogmatic about it
+
+  </div>
+
+
+</Layout>

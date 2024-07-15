@@ -1,0 +1,33 @@
+---
+import { Picture } from "astro:assets";
+import PicsSpace from "./PicsSpace";
+const images = await import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/yearly-pic/*.{jpeg,jpg,png,gif}"
+);
+---
+
+<PicsSpace client:load>
+  {
+    Object.entries(images).map(([key, img]) => (
+      // <div class="pt-full w-full relative overflow-hidden">
+      <Picture
+        pictureAttributes={
+          {
+            // class: "absolute z-0 top-0 object-cover w-full h-full",
+          }
+        }
+        src={img()}
+        width={150}
+        height={150}
+        formats={["webp"]}
+        alt={key.match(/([0-9]+)\.jpg$/)![1]}
+      />
+      // <div class="absolute z-20 text-white bottom-2 right-2 text-xs md:bottom-4 md:right-4 md:text-xl w-full text-right">
+      //   <span class="rounded-md bg-black/50 px1 py.5 md:px2 md:py1">
+      //     {key.match(/([0-9]+)\.jpg$/)![1]}
+      //   </span>
+      // </div>
+      // </div>
+    ))
+  }
+</PicsSpace>

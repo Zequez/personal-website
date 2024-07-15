@@ -1,0 +1,31 @@
+-
+  icon: fa-brands:youtube
+  name: YouTube
+  link: https://youtube.com/@zequez
+  color: '#FF0000'
+-
+  icon: fa-brands:instagram
+  name: Instagram
+  link: https://instagram.com/ezequiel.inventos
+  color: '#E4405F'
+-
+  icon: fa-brands:github
+  name: GitHub
+  link: https://github.com/zequez
+  color: '#181717'
+-
+  icon: fa-brands:telegram
+  name: Telegram
+  link: https://t.me/zequez
+  color: '#26A5E4'
+-
+  icon: fa-brands:whatsapp
+  name: Whatsapp
+  link: https://wa.me/5492235235568
+  color: '#25D366'
+-
+  icon: fa:at
+  name: Email
+  link: mailto:zequez@gmail.com
+
+  color: '#EA4335'
