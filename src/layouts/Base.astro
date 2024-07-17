@@ -23,16 +23,62 @@ const navItem = homeNav[nav];
     class:list={["bg-main-800 flex flex-col min-h-screen font-[Quicksand]"]}
   >
     <Header />
-    <h2 class="relative z-30
+    {
+      navItem ? (
+        <h2
+          class="
+  relative z-30
+  h0 -mt13 mb13"
+        >
+          <div class="h24 overflow-hidden">
+            <div class="flexc_ w-full max-w-screen-md mx-auto h24">
+              <div
+                class="
+      flex-shrink-0
+      w-20 h-20 flexcc b-5 b-main-800 ml4 mr4
+      bg-main-600 bg-gradient-to-b from-white/10 to-white/0 shadow-md
+      rounded-full text-4xl
+    "
+              >
+                {navItem.icon}
+              </div>
+              <div
+                class="
+      relative
+      flex-grow py2 px3
+      text-2xl text-white font-normal tracking-wider font-[Quicksand]"
+              >
+                <div class="relative z-10">
+                  <div class="text-xl">{navItem.title}</div>
+                  <div class="text-sm opacity-70">{navItem.sub}</div>
+                </div>
+                <div
+                  class="
+        absolute z-0 top-0 left-0 h-full w-2/1
+
+        bg-main-600 bg-gradient-to-b from-white/10 to-white/0 shadow-md
+        rounded-l-lg
+        b-4 b-main-800 b-r-0"
+                />
+              </div>
+            </div>
+          </div>
+        </h2>
+      ) : (
+        <h2
+          class="relative z-30
       flexcc
-      h20 -mt11 -mb11">
-      <div class="relative w-30 h-30">
-        <img
-          src="/me.jpg"
-          class="relative z-20 w-full h-full rounded-full shadow-sm b-4 b-main-700 shadow-md"
-        />
-      </div>
-    </h2>
+      h20 -mt11 -mb11"
+        >
+          <div class="relative w-30 h-30">
+            <img
+              src="/me.jpg"
+              class="relative z-20 w-full h-full rounded-full shadow-sm b-4 b-main-700 shadow-md"
+            />
+          </div>
+        </h2>
+      )
+    }
     <main class:list={["flex-grow relative pt10", { markdown: markdown }]}>
       <slot />
     </main>

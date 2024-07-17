@@ -4,7 +4,12 @@ import Layout from "../layouts/Base.astro";
 import PicsSpaceWithChildren from '../components/PicsSpaceWithChildren.astro';
 
 
-<Layout markdown={true} title="About Me" description="Lorem ipsum dolor sit amet" nav="about">
+<Layout
+  markdown={true}
+  title="About Me"
+  description="Photo gallery, birth date,
+    astrological clientInformation, values, beliefs,
+    life situation, personality." nav="about">
   <div class="mt8 text-center text-2xl font-bold">Born 14 December 1992 at 11:40</div>
   <div class="opacity-50 text-center mb12">Mar del Plata, Argentina</div>
   <PicsSpaceWithChildren />

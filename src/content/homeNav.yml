@@ -4,24 +4,24 @@ about:
   hue: 70
   icon: 💬
   sub: Who is this person?
-webStudio:
-  title: Web Studio
-  link: /web-studio
-  hue: 50
-  icon: 💻
-  sub: Hand crafted website for you
+# webStudio:
+#   title: Web Studio
+#   link: /web-studio
+#   hue: 50
+#   icon: 💻
+#   sub: Hand crafted website for you
 engineering:
   title: Engineering
   link: /engineering
   hue: 40
   icon: ⚙️
   sub: I join teams as web engineer
-ehp:
-  title: EHP Challenge
-  link: /ehp
-  hue: 10
-  icon: ❤️‍🔥
-  sub: 50 Emotional Healing Processes
+# ehp:
+#   title: EHP Challenge
+#   link: /ehp
+#   hue: 10
+#   icon: ❤️‍🔥
+#   sub: 50 Emotional Healing Processes
 portfolio:
   title: Portfolio
   link: /portfolio

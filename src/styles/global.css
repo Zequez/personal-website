@@ -34,13 +34,15 @@
 }
 
 .markdown h1 {
-	@apply text-5xl;
-	@apply font-bold;
-	@apply mb-4;
+	@apply text-5xl font-bold mb-4;
 }
 
 .markdown h2 {
-	@apply text-2xl font-bold my8;
+	@apply text-2xl font-bold mb-4;
+}
+
+.markdown h3 {
+	@apply text-lg font-bold mb-4;
 }
 
 .markdown p {
@@ -48,9 +50,8 @@
 }
 
 .markdown ul {
-	@apply list-disc;
-	@apply list-inside;
-	@apply mb-4;
+	list-style-type: "- ";
+	@apply list-inside mb-4;
 }
 
 .markdown a {

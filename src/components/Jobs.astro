@@ -1,0 +1,69 @@
+---
+import jobs from "../content/jobs.yml";
+
+type GroupedJobs = { [key: string]: typeof jobs };
+
+const groupedByTime = jobs.reduce((acc, job) => {
+  if (acc[job.when]) {
+    acc[job.when].push(job);
+  } else {
+    acc[job.when] = [job];
+  }
+  return acc;
+}, {} as GroupedJobs);
+
+const timeGroups = {
+  "short-time": "Short Time Ago",
+  "mid-time": "Mid Time Ago",
+  "long-time": "Long Time Ago",
+} as { [key: string]: string };
+---
+
+<div class="mb4">
+  {
+    Object.entries(groupedByTime).map(([timeGroup, jobs]) => (
+      <div class="mb4">
+        <h3>{timeGroups[timeGroup]}</h3>
+        {jobs.map((job) => (
+          <div class="bg-main-700 text-white p4 rounded-md mb2 text-white/80 shadow-sm b-1 b-black/10 mb4">
+            <div class="flex flex-col md:flex-row">
+              <div class="flex-grow flex-basis-1">
+                <div class="text-xl font-bold">{job.title}</div>
+                <div class="text-lg">
+                  <strong>Where: </strong>
+                  {job.link ? (
+                    <a target="_blank" href={job.link}>
+                      {job.where}
+                    </a>
+                  ) : (
+                    job.where
+                  )}
+                  {job.repo
+                    ? [
+                        <span> - </span>,
+                        <a target="_blank" href={job.repo}>
+                          Repo
+                        </a>,
+                      ]
+                    : null}
+                </div>
+                <div class="text-lg mb2">
+                  <strong>How long: </strong>
+                  about {job.time}
+                </div>
+                <div class="flex flex-wrap">
+                  {job.tech.map((tech) => (
+                    <div class="bg-black/25 py1 px2 rounded-md mr2 mb2">
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div class="flex-grow flex-basis-1">{job.description}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    ))
+  }
+</div>

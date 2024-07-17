@@ -8,7 +8,8 @@ import yaml from "@rollup/plugin-yaml";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://ezeas.org",
+  site: "https://ezequiel.site",
+  base: "zequez/personal-website",
   integrations: [
     mdx(),
     sitemap(),

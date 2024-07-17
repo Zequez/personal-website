@@ -1,0 +1,133 @@
+import Layout from "../layouts/Base.astro";
+import Jobs from '../components/Jobs.astro';
+// import Skillset from '../components/Skillset';
+
+
+<Layout
+  title="Engeneering"
+  description=""
+  nav="engineering"
+>
+  <div class="px4 pt4 mx-auto max-w-screen-md markdown text-black/70">
+    ## 🏃 Experience
+
+    Granted, I don't have a long track records of working on long term projects
+    in companies; but I've been creating on the web since 2008 and got my first
+    real job on 2011.
+
+    To me this has been always more a tool to satisfy my mental need of inventing stuff
+    than a career, and as such most of my effort has been working on side projects
+    than on paid work.
+
+    ## 🔧 Skillset
+
+    <div class="flex flex-col sm:flex-row sm:space-x-4">
+      <div class="flex-grow flex-basis-1">
+        ### Programming Languages
+
+        <div class="flex bg-main-700 b-1 rounded-md b-black/10 text-white mb4">
+          <div class="p2 b-r b-black/10 basis-1/4">
+            <strong class="block underline">Rusty</strong>
+            <div>PHP</div>
+            <div>Python</div>
+            <div>CoffeeScript</div>
+          </div>
+          <div class="p2 b-r b-black/10 basis-1/4">
+            <strong class="block underline">Competent</strong>
+            <div>Elm</div>
+            <div>Ruby</div>
+          </div>
+          <div class="p2 b-r b-black/10 basis-1/4">
+            <strong class="block underline">Learning</strong>
+            <div>Rust</div>
+          </div>
+          <div class="p2  basis-1/4">
+            <strong class="block underline">Fluent</strong>
+            <div>TypeScript</div>
+            <div>JavaScript</div>
+          </div>
+        </div>
+
+        ### Frameworks
+
+        <div class="flex bg-main-700 b-1 rounded-md b-black/10 text-white mb4">
+          <div class="p2 b-r b-black/10 basis-1/4">
+            <strong class="block underline">Rusty</strong>
+            <div>Ruby on Rails</div>
+          </div>
+          <div class="p2 b-r b-black/10 basis-1/4">
+            <strong class="block underline">Familiar</strong>
+            <div>Svelte</div>
+            <div>NextJS</div>
+            <div>Gatsby</div>
+          </div>
+          <div class="p2 b-r b-black/10 basis-1/4">
+            <strong class="block underline">Learning</strong>
+            <div>Holochain</div>
+          </div>
+          <div class="p2 basis-1/4">
+            <strong class="block underline ">Fluent</strong>
+            <div>Preact/React</div>
+            <div>Express</div>
+            <div>Astro</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grow flex-basis-1">
+
+        ### Additionally
+
+        <div class="flex flex-wrap mb4">
+        {['Vite', 'Vercel', 'Postgres / SQL', 'Git', 'Command line', 'Can manage remote servers', 'Can write Bash script with the help of ChatGPT'].map((v) =>
+          <div class="bg-main-700 b-1 b-black/10 text-white px2 py1 rounded-md mr2 mb2">
+            {v}
+          </div>
+        )}
+        </div>
+
+        ### Human Languages
+
+        <div class="flex bg-main-700 b-1 rounded-md b-black/10 p4 text-white mb4">
+          <div class="basis-1/2 text-center">
+            <div class="font-bold text-xl">Spanish</div>
+            <div>🇦🇷🇪🇸🇲🇽🇨🇱🇧🇴🇺🇾🇵🇪🇨🇴🇻🇪</div>
+            <div class="opacity-50">(native)</div>
+            <div>Most of latin america, Spain and official language in 20 countries. Spoken by 593 million people.</div>
+            <div></div>
+          </div>
+          <div class="basis-1/2 text-center">
+            <div class="font-bold text-xl">English</div>
+            <div>🌎🌍🌏 🇺🇸🇬🇧🇦🇺🇳🇿</div>
+            <div class="opacity-50">(fluent)</div>
+            <div>International language. Spoken by 1.13 billion people</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    ### Backend or frontend?
+
+    I enjoy frontend work more; I like the visual interactive stuff.
+    I believe the backend is gonna be deprecrated by Holochain.
+
+    ## 🎨 Portfolio
+
+
+
+    ## 👔 Jobs (I was paid money)
+
+    <Jobs/>
+
+    ## 💎 What I value in work
+
+    - I value being able to work fully remote
+    - I value being given a challenge to do on my own time that is already making a contribution, rather than an extensive technical interview or tests
+    - I value a compensation of at least $30/h, and I'm flexible in terms of payment schedule
+    - I value autonomy and experimental environments where outcomes are less important than learning and innovation
+    - I value activities that resonate with me and my vision of the future; I value purposeful work that goes beyond just making money to survive
+    - I value flexible workweeks (which can include weekends) of about 20hs per week because they work well with the way I'm parenting my son
+    - I value treating each other and being treated as a whole human being first, and bring our whole resources as people to the team rather than become strictly our technical abilities. Being kind to each other, understanding, giving support and creating possibilities for all areas of our lives.
+
+
+  </div>
+</Layout>

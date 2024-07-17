@@ -1,0 +1,96 @@
+-
+  title: Airtable Twitter Tracking System
+  where: Narrativ Ventures
+  link: https://narrativ.ventures/
+  time: 8 months
+  when: short-time
+  relation: contractor
+  tech:
+    - JavaScript
+    - Airtable
+  description:
+    I was hired to build a system to track tweets and profiles on Airtable. Most of the work
+    was done in JavaScript on the Airtable script and automation editors; due to the contraints it was
+    very challenging.
+-
+  title: Embeddable before/after Audio Player
+  where: Private client
+  link:
+  repo: https://github.com/Zequez/audio-before-after-player
+  time: 3 month
+  when: mid-time
+  relation: contractor
+  description:
+    A client that I found through Upwork.
+    I built a player to compare before/after audio tracks that he wanted to embed on his website.
+    Afterwards we worked together in developing a small SASS system to attempt to market it.
+  tech:
+    - NextJS
+    - Tailwind
+    - React
+    - TypeScript
+    - Web (HTML/CSS/JS)
+-
+  title: Smart Contracts UI
+  where: Ubiquity
+  link: https://ubq.fi/
+  time: 2 years
+  when: mid-time
+  relation: contractor
+  tech:
+    - React
+    - Ethers
+    - TypeScript
+    - Tailwind
+    - Web (HTML/CSS/JS)
+  description:
+    I was hired to build the UI for using the Ubiquity smart contracts from the
+    web.
+-
+  title: Web developing
+  where: Willdom
+  link: https://willdom.com/
+  description:
+    I was onboarded specifically to work on a Ruby on Rails project for a client, named [Homeactions](https://homeactions.net/), that
+    was creating a newsletter-as-a-service for the real state industry in the US.
+    I was doing both frontend and backend work. On the frontend, I introduced React in some specific pages with a complex editor.
+  time: 2 years
+  when: long-time
+  relation: employee-like
+  tech:
+    - Ruby on Rails
+    - React
+    - Web (HTML/CSS/JS)
+-
+  title: Official Factorio Mods Portal
+  description:
+    After having done an unofficial mods portal, the team contacted me to build
+    the official one. Problem was, I had done it in Ruby on Rails, they wanted Python and Flask.
+    I learned Python and did it anyway. After some time they continued in-house on their own.
+  where: Wube Software
+  link: https://factorio.com/game/about
+  time: 1 years
+  when: long-time
+  relation: contractor
+  tech:
+    - Web (HTML/CSS/JS)
+    - Python
+    - Flask
+-
+  title: Web developing
+  description:
+    After having built Mapa de Transporte, I was hired by Avalith a local company at the time,
+    to work on a
+    I built web apps and websites for clients.
+    I worked with **PHP**, **Ruby on Rails**,  and of course HTML, JS and CSS.
+    For a year I was subcontracted to Piksel, a US company.
+  where: Avalith
+  link: https://www.avalith.net/
+  time: 2 years
+  when: long-time
+  relation: employee-like
+  tech:
+    - Web (HTML/CSS/JS)
+    - PHP
+    - Ruby on Rails
+    - Backbone
