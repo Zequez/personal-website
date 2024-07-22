@@ -1,9 +1,9 @@
-import { APIRoute } from "astro/dist/@types/astro";
+// import { APIRoute } from "astro/dist/@types/astro";
 
-export const POST: APIRoute = ({ request }) => {
-  return new Response(
-    JSON.stringify({
-      message: "This was a POST!",
-    })
-  );
-};
+// export const POST: APIRoute = ({ request }) => {
+//   return new Response(
+//     JSON.stringify({
+//       message: "This was a POST!",
+//     })
+//   );
+// };
