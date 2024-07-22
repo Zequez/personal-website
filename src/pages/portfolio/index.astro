@@ -8,7 +8,7 @@ import img from "/src/assets/portfolio/mandelbrot-sandbox.png";
 import img2 from "/src/assets/portfolio/ggfilter.png";
 import PortfolioGallery from "../../components/PortfolioGallery";
 
-const portfolio = await getCollection("portfolio");
+const portfolio = (await getCollection("portfolio")).reverse();
 
 function getImages(portfolioEntry: (typeof portfolio)[0]) {
   return Promise.all(
@@ -62,7 +62,6 @@ const parseUrl = (liveLink: string) => {
             <div>
               <span class="font-bold">Status:</span>{" "}
               {portfolioEntry.data.status}
-              it
             </div>
             <div class="flex-grow" />
             {portfolioEntry.data.repoLink ? (

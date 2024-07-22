@@ -1,27 +1,18 @@
 ---
 title: Email Signatures Builder
-link: https://firmas-gen.ezequielschwartzman.org
-sourceLink: https://github.com/Zequez/email-signature-builder
-thumbnail: /assets/email-signatures-screenshot.png
-iframe: https://firmas-gen.ezequielschwartzman.org
-dateStart: 2023-05-05
-dateEnd: 2023-05-05
+liveLink: https://zequez.github.io/email-signature-builder/
+repoLink: https://github.com/Zequez/email-signature-builder
+media:
+  - ../../assets/portfolio/email-signatures-screenshot.png
 tags:
   - Preact
   - Twind
   - Front-end
   - Generator
-creationType: software
-isPublished: true
-isOnline: true
-description: A template-based HTML email signature generator.
-language:
-  - en
-releases:
-  -
-    version: 0.1.0
-    date: 2023-05-05
-    description: ''
+when: mid-time
+order: 14
+description: A template-based HTML email signature generator I built by request of a client. It generates an HTML you then paste into Gmail or other email systems.
+status: Archived
 ---
 
 I built this for a client initially. They wanted to generate an HTML email signature based on a design. Turns out you gotta copy the signature as HTML and then paste it on Gmail or other email systems. The whole thing is quite convoluted.

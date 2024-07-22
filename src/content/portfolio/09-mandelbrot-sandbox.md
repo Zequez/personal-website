@@ -1,28 +1,21 @@
 ---
 title: Mandelbrot Sandbox
-link: https://mandelbrot.ezequielschwartzman.org
-sourceLink: https://github.com/Zequez/mandelbrot-sandbox
-thumbnail: /assets/mandelbrot-sandbox.png
-iframe: https://mandelbrot.ezequielschwartzman.org
-date: 2020-10-31
+description: A sandbox to explore the Mandelbrot fractal I built to satisfy my own curiosity
+liveLink: https://zequez.github.io/mandelbrot-sandbox/
+repoLink: https://github.com/Zequez/mandelbrot-sandbox
+media:
+  - ../../assets/portfolio/mandelbrot-sandbox.png
 tags:
   - React
   - Tailwind
-  - Front-end
+  - HTML/CSS/JS
+  - TypeScript
   - Rust
   - Web Assembly
   - Mandelbrot
-creationType: software
-isPublished: true
-isOnline: true
-description: A sandbox to play with and explore the Mandelbrot fractal.
-language:
-  - en
-releases:
-  -
-    version: 0.1.0
-    date: 2020-10-31
-    description: ''
+when: mid-time
+status: Maybe I'll improve it
+order: 26
 ---
 
 The Mandelbrot is a fractal pattern created by a mathematical function. Some liken it to the Buddha sitting on meditation,

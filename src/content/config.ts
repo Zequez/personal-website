@@ -21,7 +21,6 @@ const portfolio = defineCollection({
       description: z.string(),
       liveLink: z.string().nullable(),
       repoLink: z.string().nullable(),
-      order: z.number(),
       when: z.enum(["short-time", "mid-time", "long-time"]),
       media: z.array(image()),
       tags: z.array(z.string()),

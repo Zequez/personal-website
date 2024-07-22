@@ -1,33 +1,21 @@
 ---
 title: SpacePort
-link: https://spaceport.ezequielschwartzman.org
-sourceLink: https://github.com/zequez/spaceport
-thumbnail: /assets/spaceport-1.png
-date: 2023-06-27
+liveLink: https://spaceport-seven.vercel.app/
+repoLink: https://github.com/zequez/spaceport
+media:
+  - ../../assets/portfolio/spaceport-2.png
+  - ../../assets/portfolio/spaceport-3.png
 tags:
-  - Front-end
+  - HTML/CSS/JS
   - Possibility Management
   - React
   - Vercel
   - Astro
   - Progressive Web App
-  - StartOver.xyz
-creationType: software
-isPublished: true
-isOnline: true
-language:
-  - en
-description: My alternative take on the Spaceport for StartOver.xyz
-iframe: https://spaceport.ezequielschwartzman.org
-releases:
-  -
-    date: 2023-06-27
-    version: 0.1.0
-    description: |
-      Initial prototype
-      - Dynamic alphabetic navigation component inspired by Niagara Launcher
-      - All images and pages links were scraped from the original Spaceport
-      - Content of each page and other metadata is not there yet
+description: My alternative take on the Spaceport for StartOver.xyz; mostly an experiment to try out creating the navigation style of Niagara Launcher. I didn't quite finish porting all the data and maintaining it.
+when: mid-time
+order: 24
+status: Mmmm
 ---
 
 [StartOver.xyz](http://startover.xyz) is a free-to-play massively-multiplayer online-and-offline matrix-building thoughtware-upgrade personal-transformation real-life adventure-game created and maintained by the [General Memetics team](https://generalmemetics.mystrikingly.com/).

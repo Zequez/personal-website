@@ -1,27 +1,19 @@
 ---
 title: Target Shooter
-link: http://oldsite.zequez.space/sandbox/blindmice/
-sourceLink: https://github.com/Zequez/zequez.github.io/tree/master/sandbox/blindmice
-# iframe: http://oldsite.zequez.space/sandbox/blindmice/
-# iframeStyle: "height: 640px; width: 740px;"
-thumbnail: /assets/target-shooter-1.png
-date: 2011-01-01
+repoLink: https://github.com/Zequez/target-shooter
+liveLink: https://zequez.github.io/target-shooter/
+media:
+  - ../../assets/portfolio/target-shooter-1.png
 tags:
   - CoffeeScript
   - Canvas
-  - Front-end
+  - HTML/CSS/JS
   - Game
-creationType: software
-isPublished: true
-isOnline: true
-language:
-  - en
-description: A small game about shooting targets with the mouse.
-releases:
-  -
-    version: 1.0.0
-    date: 2011-01-01
-    description: ''
+description: A small game about shooting targets with the mouse; it has multiple stages and it gets progresively harder. It was my first experience with canvas and creating a functional game.
+order: 2
+status: Archived
+when: long-time
+
 ---
 
 ![Screenshot](/assets/target-shooter-1.png)
