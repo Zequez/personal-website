@@ -5,6 +5,7 @@ import preact from "@astrojs/preact";
 import unocss from "@unocss/astro";
 import icon from "astro-icon";
 import yaml from "@rollup/plugin-yaml";
+import Icons from "unplugin-icons/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,6 +19,6 @@ export default defineConfig({
     unocss({ injectReset: true }),
   ],
   vite: {
-    plugins: [yaml()],
+    plugins: [yaml(), Icons({ jsx: "preact", compiler: "jsx" })],
   },
 });

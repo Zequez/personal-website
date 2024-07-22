@@ -46,3 +46,10 @@ declare module "*.yml" {
   const content: any;
   export default content;
 }
+
+declare module "virtual:icons/*" {
+  import type { JSX } from "preact";
+
+  const component: (props: JSX.SVGAttributes<SVGSVGElement>) => JSX.Element;
+  export default component;
+}

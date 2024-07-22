@@ -15,19 +15,18 @@ const blog = defineCollection({
 
 const portfolio = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    liveLink: z.string().optional(),
-    repoLink: z.string().optional(),
-    order: z.number(),
-    when: z.string(),
-    time: z.string(),
-    thumbnail: z.string(),
-    media: z.array(z.string()),
-    tags: z.array(z.string()),
-    enthusiasm: z.string(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      liveLink: z.string().nullable(),
+      repoLink: z.string().nullable(),
+      order: z.number(),
+      when: z.enum(["short-time", "mid-time", "long-time"]),
+      media: z.array(image()),
+      tags: z.array(z.string()),
+      status: z.string(),
+    }),
 });
 
 // const jobs = defineCollection({
@@ -44,4 +43,4 @@ const portfolio = defineCollection({
 //   }),
 // });
 
-export const collections = { blog };
+export const collections = { blog, portfolio };

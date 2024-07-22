@@ -1,21 +1,104 @@
 ---
+import { getCollection, getEntry } from "astro:content";
 import Layout from "../../layouts/Base.astro";
+import { Image, getImage } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+import img from "/src/assets/portfolio/mandelbrot-sandbox.png";
+import img2 from "/src/assets/portfolio/ggfilter.png";
+import PortfolioGallery from "../../components/PortfolioGallery";
+
+const portfolio = await getCollection("portfolio");
+
+function getImages(portfolioEntry: (typeof portfolio)[0]) {
+  return Promise.all(
+    portfolioEntry.data.media.map((media) =>
+      getImage({
+        src: media,
+        widths: [100, 1200],
+        formats: ["webp"],
+      })
+    )
+  );
+}
+
+const portfolioImages = await Promise.all(portfolio.map((e) => getImages(e)));
+
+const parseGithubRepo = (repoLink: string) => {
+  const parts = repoLink.split("/");
+  const owner = parts[parts.length - 2];
+  const repo = parts[parts.length - 1];
+  return `${owner}/${repo}`;
+};
+
+const parseUrl = (liveLink: string) => {
+  return liveLink.replace(/https?:\/\//, "");
+};
 ---
 
 <Layout
-  title="About Me"
-  description="Lorem ipsum dolor sit amet"
+  title="Portfolio"
+  description="A showcase of stuff I've created over the years"
   nav="portfolio"
 >
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
-    integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis
-    egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In
-    hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat.
-    Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu
-    non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
-    Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed
-    vulputate mi. Dictumst quisque sagittis purus sit amet.
-  </p>
+  <div class="mx-auto max-w-screen-md px4 py4 text-black/60">
+    <div class="text-2xl font-bold mb4">Most recent</div>
+    {
+      portfolio.map((portfolioEntry, i) => (
+        <div class="bg-main-700 text-white rounded-md b-1 b-black/10 shadow-md mb4">
+          <div class="flex flex-col">
+            <PortfolioGallery client:load media={portfolioImages[i] as any} />
+            <div class="p4">
+              <h2 class="text-3xl font-bold">{portfolioEntry.data.title}</h2>
+              <p>{portfolioEntry.data.description}</p>
+            </div>
+          </div>
+          <div class="bg-black/10 pl2 pt2 flex flex-wrap">
+            {portfolioEntry.data.tags.map((tag) => (
+              <div class="px1 py.5 bg-black/20 rounded-md mr2 mb2">{tag}</div>
+            ))}
+          </div>
+          <div class="flexce space-x-2 bg-black/20 p2 flex-wrap">
+            <div>
+              <span class="font-bold">Status:</span>{" "}
+              {portfolioEntry.data.status}
+              it
+            </div>
+            <div class="flex-grow" />
+            {portfolioEntry.data.repoLink ? (
+              <div class="flexcc">
+                <Icon name="fa-brands:github" class="mr-2" />
+                <a
+                  href={portfolioEntry.data.repoLink}
+                  target="_blank"
+                  class="text-main-900 underline"
+                >
+                  {parseGithubRepo(portfolioEntry.data.repoLink)}
+                </a>
+              </div>
+            ) : null}
+            {portfolioEntry.data.liveLink && portfolioEntry.data.repoLink ? (
+              <div class="">•</div>
+            ) : null}
+            {portfolioEntry.data.liveLink ? (
+              <div class="flexcc">
+                <Icon name="fa-solid:globe" class="mr-2" />
+                Live&nbsp;
+                <a
+                  href={portfolioEntry.data.liveLink}
+                  target="_blank"
+                  class="text-main-900 underline"
+                >
+                  {parseUrl(portfolioEntry.data.liveLink)}
+                </a>
+              </div>
+            ) : null}
+          </div>
+        </div>
+      ))
+    }
+    <div class="text-2xl font-bold mb4">Mid time ago</div>
+
+    <div class="text-2xl font-bold mb4">Long time ago</div>
+  </div>
 </Layout>
