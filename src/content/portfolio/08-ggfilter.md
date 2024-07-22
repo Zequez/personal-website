@@ -13,9 +13,9 @@ tags:
   - Ruby on Rails
   - Redux
 when: long-time
-description: '''
+description: '
   Sequel to PlaytimeForTheBuck. A filterable games database scraped from Steam and from the Oculus Store. Built in 3 parts: the scrapper, the API and the frontend. It scraped games list, pages and reviews from steam, and video card benchmarks for the system requirements index. Is not offline anymore.
-'''
+'
 status: Archived
 order: 20
 ---

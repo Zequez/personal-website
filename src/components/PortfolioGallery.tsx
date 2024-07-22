@@ -25,17 +25,19 @@ const PortfolioGallery = ({
           <ArrowRight class="text-4xl" />
         </div>
       </div>
-      <div class="flexcc h-24 bg-black/10">
-        {media.map((m, i) => (
-          <img
-            src={m.src}
-            srcSet={m.srcSet.attribute}
-            loading="lazy"
-            class="h-24 w-24 object-cover"
-            alt="Screenshot thumbnail"
-          />
-        ))}
-      </div>
+      {media.length > 1 ? (
+        <div class="flexcc h-24 bg-black/10">
+          {media.map((m, i) => (
+            <img
+              src={m.src}
+              srcSet={m.srcSet.attribute}
+              loading="lazy"
+              class="h-24 w-24 object-cover"
+              alt="Screenshot thumbnail"
+            />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 };
