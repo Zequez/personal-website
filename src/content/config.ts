@@ -23,6 +23,7 @@ const portfolio = defineCollection({
       repoLink: z.string().nullable(),
       when: z.enum(["short-time", "mid-time", "long-time"]),
       media: z.array(image()),
+      mediaAlt: z.array(z.string()).optional(),
       tags: z.array(z.string()),
       status: z.string(),
     }),

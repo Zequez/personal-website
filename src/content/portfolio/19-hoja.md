@@ -17,5 +17,10 @@ media:
   - ../../assets/portfolio/hoja-2.png
   - ../../assets/portfolio/hoja-3.png
   - ../../assets/portfolio/hoja-0.png
+mediaAlt:
+  - Generated pages
+  - Site configurator
+  - Administration panel
+  - Early version; not available anymore
 
 status: Mild enthusiasm, still working

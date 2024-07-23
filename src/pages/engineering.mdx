@@ -9,7 +9,7 @@ import PortfolioIndex from "../components/PortfolioIndex.astro";
   description=""
   nav="engineering"
 >
-  <div class="px4 pt4 mx-auto max-w-screen-md markdown text-black/70">
+  <div class="px4 pt4 mx-auto max-w-screen-md markdown">
     ## 🏃 Experience
 
     Granted, I don't have a long track records of working on long term projects
@@ -26,54 +26,63 @@ import PortfolioIndex from "../components/PortfolioIndex.astro";
       <div class="flex-grow flex-basis-1">
         ### Programming Languages
 
-        <div class="flex bg-main-700 b-1 rounded-md b-black/10 text-white mb4">
-          <div class="p2 b-r b-black/10 basis-1/4">
-            <strong class="block underline">Rusty</strong>
-            <div>PHP</div>
-            <div>Python</div>
-            <div>CoffeeScript</div>
+        {/* With flexbox */}
+        <div class="flex flex-col sm:flex-row bg-main-700 b-1 rounded-md b-black/10 text-white mb4">
+          <div class="sm:contents flex">
+            <div class="p2 b-r b-black/10 b-b sm:b-b-0 basis-1/2 sm:basis-1/4">
+              <strong class="block underline">Rusty</strong>
+              <div>PHP</div>
+              <div>Python</div>
+              <div>CoffeeScript</div>
+            </div>
+            <div class="p2 b-r-0 b-b sm:b-r sm:b-b-0 b-black/10 basis-1/2 sm:basis-1/4">
+              <strong class="block underline">Competent</strong>
+              <div>Elm</div>
+              <div>Ruby</div>
+            </div>
           </div>
-          <div class="p2 b-r b-black/10 basis-1/4">
-            <strong class="block underline">Competent</strong>
-            <div>Elm</div>
-            <div>Ruby</div>
-          </div>
-          <div class="p2 b-r b-black/10 basis-1/4">
-            <strong class="block underline">Learning</strong>
-            <div>Rust</div>
-          </div>
-          <div class="p2  basis-1/4">
-            <strong class="block underline">Fluent</strong>
-            <div>TypeScript</div>
-            <div>JavaScript</div>
+          <div class="sm:contents flex">
+            <div class="p2 b-r  b-black/10 basis-1/2 sm:basis-1/4">
+              <strong class="block underline">Learning</strong>
+              <div>Rust</div>
+            </div>
+            <div class="p2  basis-1/2 sm:basis-1/4">
+              <strong class="block underline">Fluent</strong>
+              <div>TypeScript</div>
+              <div>JavaScript</div>
+            </div>
           </div>
         </div>
 
         ### Frameworks
 
-        <div class="flex bg-main-700 b-1 rounded-md b-black/10 text-white mb4">
-          <div class="p2 b-r b-black/10 basis-1/4">
-            <strong class="block underline">Rusty</strong>
-            <div>Ruby on Rails</div>
-          </div>
-          <div class="p2 b-r b-black/10 basis-1/4">
-            <strong class="block underline">Familiar</strong>
-            <div>Svelte</div>
-            <div>NextJS</div>
-            <div>Gatsby</div>
-          </div>
-          <div class="p2 b-r b-black/10 basis-1/4">
-            <strong class="block underline">Learning</strong>
-            <div>Holochain</div>
-          </div>
-          <div class="p2 basis-1/4">
-            <strong class="block underline ">Fluent</strong>
-            <div>Preact/React</div>
-            <div>Express</div>
-            <div>Astro</div>
+        {/* With grid (grid wins) */}
+        <div class="bg-main-700 rounded-md b b-black/10 overflow-hidden mb4 text-white">
+          <div class="grid grid-cols-2 grid-rows-2 gap-[1px] sm:(grid-cols-[auto_auto_auto_auto] grid-rows-1) bg-black/10">
+            <div class="p2 bg-main-700">
+              <strong class="block underline">Rusty</strong>
+              <div>Ruby on Rails</div>
+            </div>
+            <div class="p2 bg-main-700">
+              <strong class="block underline">Familiar</strong>
+              <div>Svelte</div>
+              <div>NextJS</div>
+              <div>Gatsby</div>
+            </div>
+            <div class="p2 bg-main-700">
+              <strong class="block underline">Learning</strong>
+              <div>Holochain</div>
+            </div>
+            <div class="p2 bg-main-700">
+              <strong class="block underline ">Fluent</strong>
+              <div>Preact/React</div>
+              <div>Express</div>
+              <div>Astro</div>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="flex-grow flex-basis-1">
 
         ### Additionally

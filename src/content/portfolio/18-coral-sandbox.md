@@ -11,6 +11,15 @@ media:
   - ../../assets/portfolio/coral-sandbox-5.png
   - ../../assets/portfolio/coral-sandbox-6.png
   - ../../assets/portfolio/coral-sandbox-7.png
+mediaAlt:
+  - App selector
+  - Writing out loud
+  - Microphone input visualizer
+  - Paint with squares
+  - Paint by driving a car
+  - Game of pressing letters on the keyboard
+  - Paint with the mouse
+
 tags:
   - Vite
   - Preact

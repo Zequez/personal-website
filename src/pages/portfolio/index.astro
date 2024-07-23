@@ -21,7 +21,7 @@ const portfolioImages = await generatePortfolioImages();
   description="A showcase of stuff I've created over the years"
   nav="portfolio"
 >
-  <div class="mx-auto max-w-screen-md px4 py4 text-black/60">
+  <div class="mx-auto max-w-screen-md px4 py4">
     <PortfolioIndex />
     {
       Object.entries(groupedPortfolio).map(([timeGroup, portfolioEntries]) => (
@@ -37,6 +37,7 @@ const portfolioImages = await generatePortfolioImages();
               <div class="flex flex-col">
                 <PortfolioGallery
                   client:load
+                  mediaAlt={portfolioEntry.data.mediaAlt || []}
                   media={portfolioImages[portfolioEntry.id] as any}
                 />
                 <div class="p4">

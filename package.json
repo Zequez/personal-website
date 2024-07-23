@@ -25,6 +25,7 @@
     "@unocss/reset": "^0.61.3",
     "astro": "^4.11.5",
     "astro-icon": "^1.1.0",
+    "classnames": "^2.5.1",
     "preact": "^10.22.1",
     "typescript": "^5.5.3",
     "unocss": "^0.61.3",
