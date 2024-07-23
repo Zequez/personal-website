@@ -1,17 +1,42 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const writings = await getCollection("blog");
+
+const options = { day: "numeric", month: "short", year: "numeric" };
+const formatter = new Intl.DateTimeFormat("en-US", options as any);
 ---
 
-<Layout title="About Me" description="Lorem ipsum dolor sit amet" nav="writing">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
-    integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis
-    egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In
-    hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat.
-    Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu
-    non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
-    Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed
-    vulputate mi. Dictumst quisque sagittis purus sit amet.
-  </p>
+<Layout
+  title="Writing"
+  description="Stuff from my mind in written format"
+  nav="writing"
+>
+  <div class="mx-auto max-w-screen-sm px4 pt4 mb4">
+    {
+      writings.map((wr) => (
+        <div class="flex mb4 p4 bg-gradient-to-b from-white/20 to-white/10 rounded-md shadow-sm b b-black/10">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 mr4">
+            <Image
+              src={wr.data.thumbnail}
+              alt={wr.data.thumbnailAlt || wr.data.title}
+              widths={[100]}
+              class="w-full h-full object-cover rounded-[4px] b b-black/40 shadow-sm"
+            />
+          </div>
+          <div class="flex-grow flex-col h-full">
+            <div class="text-xl font-bold">
+              <a href={"/writing/" + wr.slug} class="underline">
+                {wr.data.title}
+              </a>
+            </div>
+            <p class="flex-grow">{wr.data.description}</p>
+            <div class="text-right">{formatter.format(wr.data.pubDate)}</div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </Layout>

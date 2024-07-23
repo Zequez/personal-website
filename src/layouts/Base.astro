@@ -34,7 +34,8 @@ const navItem = homeNav[nav];
         >
           <div class="h24 overflow-hidden">
             <div class="flexc_ w-full max-w-screen-md mx-auto h24">
-              <div
+              <a
+                href={navItem.link}
                 class="
       flex-shrink-0
       w-20 h-20 flexcc b-5 b-main-800 ml4 mr4
@@ -43,17 +44,17 @@ const navItem = homeNav[nav];
     "
               >
                 {navItem.icon}
-              </div>
+              </a>
               <div
                 class="
       relative
       flex-grow py2 px3
       text-2xl text-white font-normal tracking-wider font-[Quicksand]"
               >
-                <div class="relative z-10">
-                  <div class="text-xl">{navItem.title}</div>
-                  <div class="text-sm opacity-70">{navItem.sub}</div>
-                </div>
+                <a href={navItem.link} class="block relative z-10">
+                  <span class="block text-xl">{navItem.title}</span>
+                  <span class="block text-sm opacity-70">{navItem.sub}</span>
+                </a>
                 <div
                   class="
         absolute z-0 top-0 left-0 h-full w-2/1

@@ -1,40 +1,29 @@
 ---
-title: "Introducción a la Arquiarquía"
-link: ''
-sourceLink: ''
-thumbnail: /assets/archiarchy.webp
-date: 2023-06-24
-tags: []
-creationType: writing
-isPublished: true
-isOnline: true
+title: La arquiarquia y otras distinciones
+thumbnail: ../../assets/blog/archiarchy.webp
+thumbnailAlt: Símbolo de la arquiarquía
+pubDate: 'Jun 24 2023'
+updateDate: '22 Jul 2024'
 description: Un vistazo general al mundo más allá del patriarcado.
-language:
-  - es
-releases:
-  -
-    version: Draft-1
-    date: 2023-06-24
-    description: ''
 ---
 
-![Símbolo de la arquearquía](/assets/archiarchy.webp)
+![Símbolo de la arquiarquía](../../assets/blog/archiarchy.webp)
 
-Con este post doy comienzo una serie cuyo título es “Cruzando el puente: Escapando del patriarcado y descubriendo los límites culturales” donde comparto mi propio recorrido en este camino que estoy tomando.
+## Distinciones
 
-Tengan en cuenta que esto es un vistazo general a algunos de los conceptos interconectados que vengo adquiriendo están en mi cabeza. Mi claridad al respecto es un grano de arena al lado de otros seres con muchísima más experiencia práctica que yo, que son quienes descubrieron todas estas cosas experimentando. Una cosa es entender estas cosas intelectualmente y otra muy distinta es integrar las distinciones en todos tus 5 cuerpos. En cada sección linkeo a páginas en inglés escritas por personas más iniciadas que yo, donde se profundiza.
+Para poder elegir es necesario poder distinguir. Distinguir significa poder ver cosas distintas que antes parecían ser lo mismo. Distinguir es como ver a color después de pasarte la vida viendo en escala de grises. Poder distinguir entre veneno y comida es muy útil.
 
-## La arquiaqué?
+## ¿La arquiaqué?
 
 Si vives en la cultura moderna, seguramente nunca has escuchado el término Arquiarquía. Así que he aquí la primera distinción.
 
-La Arquiarquía es la cultura que está emergiendo alrededor del mundo ahora que tanto el Matriarcado y el Patriarcado están evidentemente obsoletos.
+La Arquiarquía es la cultura que está emergiendo alrededor del mundo ahora que el Matriarcado y el Patriarcado están obsoletos.
 
 El Patriarcado, la cultura dominante moderna, es una cultura centrada en la energía masculina. Está caracterizada por las jerarquías, el dominio de la naturaleza, la mente racional, la competencia.
 
 El Matriarcado, la cultura dominante previa al Patriarcado, cuando éramos cazadores-recolectores, y nos mantenía mamá Gaia. Las mujeres lideraban y tomaban las decisiones.
 
-En la Arquiarquía, los hombres auténticamente iniciados a la adultez colaboran creativamente con las mujeres auténticamente iniciadas a la adultez. Todes somos reyes y reinas, radicamente responsables y actuando desde nuestra propia autoridad. La organización es horizontal y toroidal.
+En la Arquiarquía, hombres y mujeres colaboran creativamente. Tod@s somos reyes y reinas, radicamente responsables y actuando desde nuestra propia autoridad. La organización es horizontal y toroidal.
 
 Las iniciaciones son procesos por los cuales se transforma nuestra Matriz del ser, y se destruyen las estructura de nuestras Cajas, lo que permite que se re-estructure y se expanda de formas que antes no eran posibles, creando más posibilidades.
 
@@ -49,8 +38,6 @@ Sobre Responsabilidad Radical, el sitio [Radical Responsibility](https://radical
 Sobre Autoridad Personal, el sitio [Authority](https://authority.mystrikingly.com/) (en inglés)
 
 Sobre Iniciaciones, el sitio [Initiations](https://initiations.mystrikingly.com/) (en inglés)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/781ca023-1982-4bef-864f-359333ef2a66/Untitled.png)
 
 ## La Caja
 
@@ -69,7 +56,6 @@ Para saber más sobre la caja, el sitio [Box Technology](https://boxtechnology.m
 
 Para saber más sobre los 6 Egos, el sitio [Ego State](https://egostate.mystrikingly.com/) (en inglés)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f682ac66-85eb-4f8e-a9c6-eeac258b6a19/Untitled.png)
 
 ## Gremlin
 
@@ -104,8 +90,6 @@ Para vivir en la Arquiarquia hay que des-instalar toda la programación del Patr
     - Es tu aura, tu atención, la fuente de tu autoridad personal.
 - Cuerpo arquetípico
     - Personalmente todavía no tengo ni idea de qué se trata. Mi entendimiento es que es el cuerpo emergente cuando los otros 4 cuerpos están trabajando en balance.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/470f5374-0b39-435e-bf50-ffb334edfcaa/Untitled.png)
 
 En la cultura moderna se hace muchísimo énfasis en el cuerpo mental, y un poco al cuerpo físico. Los otros cuerpos no son reconocidos, y están atrofiados por el desuso, y específicamente, el cuerpo emocional tiene la madurez de cuando lo dejamos de usar (generalmente en nuestra infancia). Aprender a utilizar sentimientos de adultos es el proceso de maduración de nuestro cuerpo emocional.
 
@@ -148,15 +132,11 @@ En algunos lenguajes hay palabras para emociones mezcladas que en otros lenguaje
 
 Para saber más sobre emociones mezcladas, pueden visitar el sitio de [Unmixing Emotions](https://unmixemotions.mystrikingly.com/) (en inglés)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e203167-a838-4fc8-8b70-cae71563fa8e/Untitled.png)
-
 ### Tenemos un umbral de entumecimiento a las emociones y sentimientos
 
 En la cultura moderna se celebra el entumecimiento de nuestro cuerpo emocional, los sentimientos van del 0% al 100% de potencia. Cuando nuestra barra de entumecimiento está al 50%, todo lo que está por debajo de esto no lo sentimos. Es por este motivo que muchas veces “explotamos” emocionalmente, porque estas explosiones son lo único que sentimos,  en realidad venía acumulándose y pasó por debajo del radar. Cuando nos des-entumecemos, estas cosas dejan de suceder, porque notamos las emociones y sentimientos mucho antes y las atendemos conscientemente.
 
 Para saber más sobre la barra de entumecimiento, pueden visitar el sitio de [Numbness Bar](https://numbnessbar.mystrikingly.com/) (en inglés)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b0dca50-7c29-4672-bbf2-4b865c588d98/Untitled.png)
 
 ## Possibility Management
 

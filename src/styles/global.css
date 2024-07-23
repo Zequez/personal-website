@@ -34,7 +34,7 @@
 }
 
 .markdown h1 {
-	@apply text-5xl font-bold mb-4;
+	@apply text-3xl sm:text-4xl font-bold mb-8;
 }
 
 .markdown h2 {
@@ -47,6 +47,10 @@
 
 .markdown p {
 	@apply mb-4;
+}
+
+.markdown img {
+	@apply mb-4 b b-black/10 rounded-md mx-auto w-full;
 }
 
 .markdown ul {
