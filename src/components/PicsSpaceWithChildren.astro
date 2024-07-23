@@ -12,7 +12,10 @@ const alts = Object.keys(imagesMap)
   .reverse();
 ---
 
-<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 mt4">
+<div
+  class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 mt4"
+  id="gallery"
+>
   {
     imagesList.map((img, i) => (
       <div class="flexcc relative p2 group">
@@ -21,7 +24,7 @@ const alts = Object.keys(imagesMap)
             widths={[150, 600]}
             src={img()}
             alt={alts[i]}
-            class="relative z-10 rounded-md shadow-sm b b-black/10"
+            class="cursor-pointer openable-image relative z-10 rounded-md shadow-sm b b-black/10"
           />
           <div class="absolute bottom-1px right-1px bg-black/80 z-20 rounded-tl-md text-white text-xs tracking-wider font-mono px1 py.5">
             {alts[i]}
@@ -32,6 +35,32 @@ const alts = Object.keys(imagesMap)
     ))
   }
 </div>
+
+<!-- <div class="fixed inset-0 z-40">
+  <div class="absolute z-30 inset-0 flexcc">
+    <img src="" srcset="" alt="" class="w-full h-full object-cover" />
+  </div>
+  <div class="absolute z-20 inset-0 bg-black/20"></div>
+</div>
+
+<script></script> -->
+
+<script>
+  import { createElement } from "preact";
+
+  document
+    .querySelectorAll<HTMLImageElement>(".openable-image")
+    .forEach((img) => {
+      img.addEventListener("click", () => {
+        const src = img.src;
+        const a = document.createElement("a");
+
+        a.href = src;
+        a.target = "_blank";
+        a.click();
+      });
+    });
+</script>
 
 <!-- <PicsSpace client:load>
   {
