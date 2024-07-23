@@ -1,12 +1,39 @@
 ---
-import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
 import PicsSpace from "./PicsSpace";
-const images = await import.meta.glob<{ default: ImageMetadata }>(
+const imagesMap = await import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/yearly-pic/*.{jpeg,jpg,png,gif}"
 );
+
+const imagesList = Object.values(imagesMap).reverse();
+
+const alts = Object.keys(imagesMap)
+  .map((key) => key.match(/([0-9]+)\.jpg$/)![1])
+  .reverse();
 ---
 
-<PicsSpace client:load>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 mt4">
+  {
+    imagesList.map((img, i) => (
+      <div class="flexcc relative p2 group">
+        <div class="relative">
+          <Image
+            widths={[150, 600]}
+            src={img()}
+            alt={alts[i]}
+            class="relative z-10 rounded-md shadow-sm b b-black/10"
+          />
+          <div class="absolute bottom-1px right-1px bg-black/80 z-20 rounded-tl-md text-white text-xs tracking-wider font-mono px1 py.5">
+            {alts[i]}
+          </div>
+        </div>
+        <div class="absolute z-0 top-1/2 left-0 right-0 -translate-y-2 h4 bg-black/80 group-last:rounded-r-md group-last:right-.5 group-first:rounded-l-md group-first:left-.5" />
+      </div>
+    ))
+  }
+</div>
+
+<!-- <PicsSpace client:load>
   {
     Object.entries(images).map(([key, img]) => (
       // <div class="pt-full w-full relative overflow-hidden">
@@ -30,4 +57,4 @@ const images = await import.meta.glob<{ default: ImageMetadata }>(
       // </div>
     ))
   }
-</PicsSpace>
+</PicsSpace> -->
