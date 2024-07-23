@@ -13,7 +13,7 @@ const groupedPortfolio = portfolio.reduce((acc, entry) => {
 
 function getImages(portfolioEntry: (typeof portfolio)[0]) {
   return Promise.all(
-    portfolioEntry.data.media.map((media) =>
+    portfolioEntry.data.media.map((media: any) =>
       getImage({
         src: media,
         widths: [100, 1200],

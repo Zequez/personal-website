@@ -48,7 +48,7 @@ const portfolioImages = await generatePortfolioImages();
                 </div>
               </div>
               <div class="bg-black/10 pl2 pt2 flex flex-wrap">
-                {portfolioEntry.data.tags.map((tag) => (
+                {portfolioEntry.data.tags.map((tag: any) => (
                   <div class="px1 py.5 bg-black/20 rounded-md mr2 mb2">
                     {tag}
                   </div>
