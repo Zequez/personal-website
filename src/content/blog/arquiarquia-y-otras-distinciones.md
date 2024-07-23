@@ -3,7 +3,7 @@ title: La arquiarquia y otras distinciones
 thumbnail: ../../assets/blog/archiarchy.webp
 thumbnailAlt: Símbolo de la arquiarquía
 pubDate: 'Jun 24 2023'
-updateDate: '22 Jul 2024'
+updatedDate: '22 Jul 2024'
 description: Un vistazo general al mundo más allá del patriarcado.
 ---
 

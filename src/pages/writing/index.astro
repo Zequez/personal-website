@@ -33,7 +33,12 @@ const formatter = new Intl.DateTimeFormat("en-US", options as any);
               </a>
             </div>
             <p class="flex-grow">{wr.data.description}</p>
-            <div class="text-right">{formatter.format(wr.data.pubDate)}</div>
+            <div class="text-right">
+              {formatter.format(wr.data.pubDate)}{" "}
+              {wr.data.updatedDate
+                ? ` (Updated ${formatter.format(wr.data.updatedDate)})`
+                : ""}
+            </div>
           </div>
         </div>
       ))

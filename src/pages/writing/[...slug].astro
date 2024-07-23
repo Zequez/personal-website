@@ -26,7 +26,15 @@ const formatter = new Intl.DateTimeFormat("en-US", options as any);
 >
   <div class="markdown max-w-screen-md p4 mx-auto">
     <h1>{post.data.title}</h1>
-    <p class="-mt8">{formatter.format(post.data.pubDate)}</p>
+    <p class="-mt8">
+      {formatter.format(post.data.pubDate)}
+      {" "}
+      {
+        post.data.updatedDate
+          ? ` (Updated ${formatter.format(post.data.updatedDate)})`
+          : ""
+      }
+    </p>
     <Content />
   </div>
 </Layout>
