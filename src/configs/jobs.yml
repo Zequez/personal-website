@@ -1,9 +1,32 @@
 -
+  title: Engineering Collaborator
+  where: Lightningrod Labs
+  link: https://lightningrodlabs.org/
+  time: 4 months
+  when: short-time
+  relation: contractor
+  tech:
+    - TypeScript
+    - Holochain
+    - Svelte
+  description:
+    This is where I'm contributing right now. I'm working to nurture the Holochain ecosystem by experimenting with creating
+    Holochain-based Moss happs, and contributing to the development of Moss itself.
+    The environment is fantastic, as a team we are learning how to work together, focus, prioritize
+    and be productive in a low-hierarchy environment.
+    On a technical aspect, I'm mostly contributing on the front-end as my Rust is limited, but
+    then there is a whole human, direction and organization aspect that I love to be involved in.
+    I'm learning Holochain and Rust as I go.
+    We're also working towards being self-funded eventually. LrL is non-profit in itself, and it's
+    currently being personally funded by Eric Harrist Brown, who is currently at the executive head and
+    one of the originators of the Holochain fundation.
+    I still cannot believe I'm being paid for this, it's the best work agreement ever.
+-
   title: Airtable Twitter Tracking System
   where: Narrativ Ventures
   link: https://narrativ.ventures/
   time: 8 months
-  when: short-time
+  when: mid-time
   relation: contractor
   tech:
     - JavaScript
